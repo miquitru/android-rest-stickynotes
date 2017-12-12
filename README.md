@@ -6,3 +6,6 @@ Server can run in local machine or external machine. It is necessary to install 
 and port for connection.
 KeyWords :REST API, Androd app, Go, Google ComputeEngine.
 
+### Android Client
+![Screenshot](AndroidClientForStickyNotes.png)
+
