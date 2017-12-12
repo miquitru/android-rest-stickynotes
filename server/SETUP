@@ -1,0 +1,21 @@
+#!/bin/sh
+
+echo "1. Set gopath and search path"
+
+export GOPATH=`pwd`/go
+export PATH=$GOPATH/bin:$PATH
+
+echo "2. Get the server dependencies"
+
+go get server
+
+echo "3. Build the server"
+
+go build server
+
+echo "4. Stop any previously-running instances of the server"
+
+killall server
+
+echo "5. Start the server"
+./server
